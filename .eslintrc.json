@@ -1,7 +1,21 @@
 {
   "extends": "next/core-web-vitals",
+  "plugins": ["simple-import-sort", "import"],
   "rules": {
       "semi": [2, "always"],
-      "quotes": [2, "double", { "avoidEscape": true }]
+      "quotes": [2, "double", { "avoidEscape": true }],
+      "indent": ["error", 4],
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error",
+      "import/first": "error",
+      "import/newline-after-import": "error",
+      "import/no-duplicates": "error",
+        // "sort-imports": ["error", {
+        //     "ignoreCase": false,
+        //     "ignoreDeclarationSort": false,
+        //     "ignoreMemberSort": false,
+        //     "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        //     "allowSeparatedGroups": false // <-- Change this to true
+        // }]
   }
 }
